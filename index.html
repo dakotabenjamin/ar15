@@ -10,6 +10,7 @@ body {
   height: 100%;
   width: 100%;
   display: flex;
+  flex-direction: column;
   position: fixed;
   align-items: center;
   justify-content: center;
@@ -29,7 +30,13 @@ body {
 </head>
 <body>
 
-<div class="container"><h1>The AR in AR-15 stands for <span id="ar"></span></div>
+<div class="container">
+<h1>The AR in AR-15 stands for <span id="ar"></span></h1>
+<br>
+<button type="button"
+onclick="newTitle()">Refresh</button>
+
+</div>
 
 <div class="footer"> Created by <a href="https://github.com/dakotabenjamin">Dakota Benjamin </a>
 </div>
@@ -52,6 +59,12 @@ var ar = [
 'Anarchy Rules',
 'Apricot Ravioli',
 'Annual Review',
+'Age Requirement',
+'Adorable Rabbit',
+'Adorno was Right',
+'Ayn Rand',
+'Arkansas',
+'Acute Rabies',
 'Automatic Rifle'
 ];
 
