@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: linen;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0px;
+    height: 20px;
+    right: 5px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: right;
+    z-index: 100;
+}
+</style>
+</head>
+<body>
+
+<div class="container"><h1>The AR in AR-15 stands for <span id="ar"></span></div>
+
+<div class="footer"> Created by <a href="https://github.com/dakotabenjamin">Dakota Benjamin </a>
+</div>
+
+<script language="javascript">
+var target = document.getElementById('ar');
+var ar = [
+'Automatic Rifle',
+'Actually Racist',
+'A Revolver',
+'Adolf\'s Rifle',
+'Aaron Rodgers',
+'Alt-Right'
+];
+
+function newTitle () {
+    var i = (Math.random() * ar.length) | 0;
+    target.innerText = ar[i];
+}
+
+newTitle();
+</script>
+
+
+</html>
